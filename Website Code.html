@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project {
+            margin-bottom: 2rem;
+        }
+        .project video, .project img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .project h2 {
+            margin-top: 0.5rem;
+            color: #333;
+        }
+        .project p {
+            margin: 1rem 0;
+            color: #555;
+            line-height: 1.6;
+        }
+        .code {
+            background: #f4f4f4;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Build Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#project1">Project 1</a>
+        <a href="#project2">Project 2</a>
+        <a href="#project3">Project 3</a>
+    </nav>
+    <div class="container">
+        <section id="project1" class="project">
+            <h2>Project 1: Vex Robotics</h2>
+            <video controls>
+                <source src="20241130_224751.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><strong>Robot Description:</strong> </p>
+            <p><strong>GitHub Code:</strong> <a href="https://github.com/yyardi/1755K-Code-24-25" target="_blank">View the code on GitHub</a>.</p>
+            <p></p>
+            
+        </section>
+
+        <section id="project2" class="project">
+            <h2>Project 2: Air Trajectory</h2>
+                <img src="462571946_1576005289942850_1046981752065595747_n.jpg"> </img>
+            <p></p>
+        </section>
+        <section id="project3" class="project">
+            <h2>Project 3: Robot Tour</h2>
+                <img src="462572978_1115101106809838_3157144340578195359_n.jpg"> </img>
+            <p></p>
+        </section>
+    </div>
+</body>
+</html>
