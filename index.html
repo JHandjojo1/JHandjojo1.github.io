@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Build Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#project1">Project 1</a>
+        <a href="#project2">Project 2</a>
+        <a href="#project3">Project 3</a>
+    </nav>
+    <div class="container">
+        <section id="project1" class="project">
+            <h2>Project 1: Vex Robotics</h2>
+            <video controls>
+                <source src="20241130_224751.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><strong>Robot Description:</strong> This video is an example of our testing for our robot to get alliance stakes. We designed polycarbonate hooks that connect to the tank tread with standoffs to hook and basically slam the rings onto stakes (they need to be forced on) after being intake with our floating intake design. The floating intake has a minimum height and can go up to ensure optimal grip on the rings. We went with an 8-wheel (4 omni 4 traction) 6-motor drive to give us maximum pushing power while remaining nimble, as this game is all about getting the rings as fast as you can or preventing your opponents from getting the mobile goals.</p>
+            <p>Videos of our autonomous run-throughs, testing, and previous designs are in <a href="https://drive.google.com/drive/folders/10vbcPJ7JDYK6HkQ8JXTYNyUsXRU9DyeJ?usp=drive_link" target="_blank">this folder.</a> As our robot is currently undergoing development, some rings fly out. We are in the process of making a redirector that can place rings on the taller wall stakes, which would cover the area above our intake, indirectly solving the ring flying problem and giving us a new method of scoring.</p>
+            <p><strong>GitHub Code:</strong> <a href="https://github.com/yyardi/1755K-Code-24-25" target="_blank">View the code on GitHub</a>.</p>
+            <p><strong>PID Control Implementation:</strong> We use a Proportional-Integral-Derivative (PID) controller to regulate the robot's movements, utilized in the main.cpp and autons.cpp. This controller calculates the error between the desired setpoint and the current state, applying corrections based on proportional, integral, and derivative terms to minimize this error. This approach ensures smooth and accurate control of the robot's speed and position, adapting dynamically to changing conditions.</p>
+            <p><strong>Odometry and Inertial Sensor Integration:</strong> To make sure the autonomous code is accurate and our PID actually works, we use odometry and inertial sensor data to update x, y, and θ values, tracking the robot's position and orientation during autonomous operation. Odometry calculations use data from wheel encoders to estimate the robot's displacement, while the inertial sensor provides information about its heading and angular velocity. By combining these data sources, the system can accurately determine the robot's pose, enabling precise navigation and maneuvering.</p>    
+        </section>
+
+        <section id="project2" class="project">
+            <h2>Project 2: Air Trajectory</h2>
+                <img src="462571946_1576005289942850_1046981752065595747_n.jpg"> </img>
+                <p><strong>Project Overview:</strong> In our air trajectory build for Science Olympiad, we prioritized creating a robust, efficient, and easily testable design for our first competition. The goal was to launch projectiles with consistent accuracy at close and elevated, far, and bucket shots, while balancing performance and simplicity in construction.</p>
+                <p><strong>Design Choices:</strong></p>
+                <ul>
+                    <li><strong>Advantages Over Chamberless Designs:</strong> The beach ball container offered a simpler alternative to chamberless systems that rely solely on compressing ambient air in the launch tube. This approach reduced the need for precision machining while still achieving comparable results.</li>
+                    <br>
+                    <li><strong>Ease of Testing and Iteration:</strong> The beach ball design was faster to build and easier to test, enabling rapid iterations and adjustments during the design phase. Its malleability allowed for flexible adjustments to pressure and volume. This also allowed me to use it to teach new members how the event works much faster.</li>
+                </ul>
+                <p><strong>Performance and Outcomes:</strong> The design delivered reliable and repeatable launches, meeting the requirements for trajectory accuracy and consistency. Its user-friendly construction and maintenance also made it ideal for quick troubleshooting and modifications during testing phases.</p>
+                <p>We were able to get 5th place against other teams based in other states that usually win their state at the Harlem Invitational, with only a 2-inch distance from the center of the targets. We unfortunately weren’t able to make any bucket shots, but as the year goes on we will be working on making these bucket shots consistently obtainable.</p>
+                
+        </section>
+        <section id="project3" class="project">
+            <h2>Project 3: Robot Tour</h2>
+                <img src="462572978_1115101106809838_3157144340578195359_n.jpg"> </img>
+                <p><strong>Project Overview:</strong> The Robot Tour vehicle was designed as a compact, versatile robot capable of navigating through a maze with precision in both time taken and location. The event requires to to reach certain locations at certain time points and end as close as possible to the end point.</p>
+                <p><strong>Design Choices:</strong></p>
+                <ul>
+                    <li><strong>ESP Microcontroller:</strong> The ESP served as the central processing unit, offering efficient wireless communication and control for real-time responsiveness.</li>
+                    <br>
+                    <li><strong>Motor Drivers:</strong> Motor drivers were employed to control the four mecanum wheels, allowing us to change the direction they rotate in, basically being what makes our drive work.</li>
+                    <br>
+                    <li><strong>IMU (Inertial Measurement Unit):</strong> The IMU enhanced the robot’s capability for precise motion tracking and orientation control, ensuring stability during movement and making sure it moves to the right position.</li>
+                    <br>
+                    <li><strong>Mecanum Wheels:</strong> These specialized wheels allowed for side-to-side movement, giving the robot the versatility to move in the 4 cardinal directions without turning. This setup allowed us to focus only on 2 different motions that we needed to control, moving forward and backward, and side to side.</li>
+                </ul>
+                <p><strong>Performance and Outcomes:</strong> The robot successfully demonstrated smooth, omnidirectional motion, allowing it to adapt to various navigation scenarios. However, during our competition, a member of our team accidentally moved the groundwire connected to a motor driver, frying it, leaving us with a relatively poor performance compared to the potential we had. Despite this setback, we were still able to get 5th at Harlem.</p>                
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Designed by Jonathan Handjojo.</p>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:nathanhandjojo@gmail.com">nathanhandjojo@gmail.com</a></li>
+                    <li><strong>Phone:</strong> +1 (224) 276-9660</li>
+                    <li><strong>Social Media:</strong>
+                        <ul class="social-links">
+                            <li><a href="https://www.linkedin.com/in/jonathan-handjojo/" target="_blank" title="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn" /></a></li>
+                            <li><a href="https://github.com/JHandjojo1" target="_blank" title="GitHub"><img src="github-icon.png" alt="GitHub" /></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>© 2024 Jonathan Handjojo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
